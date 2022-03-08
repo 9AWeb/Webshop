@@ -3,7 +3,6 @@
 	$(document).ready(function(){
 
 		$(".mobile-navigation").append($(".main-navigation .menu").clone());
-e 
 		$(".toggle-menu").click(function(){
 			$(".mobile-navigation").slideToggle();
 		});
