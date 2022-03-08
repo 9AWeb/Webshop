@@ -2257,6 +2257,7 @@ form textarea {
   min-height: 575px;
   padding-top: 100px;
   padding-bottom: 50px;
+  right: 755px;
   background-size: cover;
   background-position: center center;
 }
@@ -2453,6 +2454,7 @@ section header .all {
 }
 
 .page {
+  position: relative;
   padding: 50px 0;
 }
 .page .entry-title {
