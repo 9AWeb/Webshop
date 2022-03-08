@@ -1,0 +1,18 @@
+Gyártó: Electronic Arts
+Modell: FIFA 16 (PC)
+
+Leírás:
+
+FIFA 16 PC játékszoftver adatai:
+FIFA 16 játékmenete az egész pályán megújul: a védők lekövetik még a legjobb támadókat is, védelmünket pedig valódi csapatrészként mozgathatjuk. Támadás közben új cseleket is bevethetünk, gyakran a labda irányának megváltoztatása nélkül is átverhetjük a védőket, illetve minden korábbinál pontosabban lőhetünk kapura.
+
+Az Electronic Arts futballsorozata története során először játszhatóvá teszi a női futballistákat is. Tizenkét női válogatott, amelyek színeiben a gyepre léphetünk, hasonlóan a férfi csapatokhoz. A FIFA 16 PC játékszoftver készítésekor a fejlesztők még tovább tolják a játék határait, hogy a játék ne csupán külsőleg hasonlítson a valódi focihoz, hanem a játék képe, a játékosok és a labda viselkedése is minél közelebb álljon a profi futball világához, és mi magunk is a játékban érezhessük magunkat.
+
+FIFA 16 PC játékszoftver minimális gépigénye:
+
+CPU: Intel Q6600 Core2 Quad @ 2.4Ghz (or AMD Phenom 7950 Quad-Core, AMD Athlon II X4 620 equivalent)
+RAM: 4GB
+GPU: AMD Radeon HD 5770, NVIDIA GTX 650
+DX: 11.0
+OS: Windows V/7/8/8.1 - 64-Bit
+HDD: 15.0 GB

@@ -1,0 +1,19 @@
+Kapható, üzletünkben megvásárolható. Originál, jogtiszta, bontatlan, nem használt játékszoftver.
+Honosítás: Angol nyelvű játékszoftver
+Technikai segítségnyújtás: bevizsgalas@magnew. hu
+A NACON és a KT Racing stúdió a WRC 9 sikerességére alapozva elhozta most a széria 10. epizódját, amely a közelgő FIA World Rally Championship 50. jubileumi évadja előtt tiszteleg. A Retrospective mód külön erre az alkalomra lett kitalálva, ahol a játékosoknak lehetőségük van a saját bőrükön megtapasztalni a WRC történelem 19 legmeghatározóbb versenyét. Nem csak a versenyek, mint például az Acropolis Rally és a Rallye Sanremo, de az autók is remek múltidézésül szolgálnak, hiszek akár az Alpine Renault A110-el is száguldozhatunk. Azonban nem csak a múltbéli dolgokban tapasztalható újítás, ebben a játékban már megtalálható lesz a Croatia Rally, Rally Estonia, Ypres Rally Belgium és a RallyRACC Rally de Espana is, amelyek a való életben is a 2021-es WRC naptár részei. Ezeken a versenyeken részt vehetnek a játékosok az 52 hivatalos csapat valamelyikének versenyzőjeként (WRC, WRC2, WRC3, Junior WRC), olyan sztárokat legyőzve, mint Sebastien Ogier, Ott Tanak, Thierry Neuville, Oliver Solberg, Adrien Fourmaux. A KT Racing ismét odafigyelt a WRC 9-ben kapott visszajelzésekre és még tovább fejlesztette a játékélményt, hogy a játékosok minél életszerűbben tapasztalhassák meg a rally világát. Idén először a játék fennállása során a versenyzőknek hatalmas lehetőségük van saját dizájnt szabni az autójuknak, illetve a Carrer módban létrehozni és alakítani saját csapatukat.
+
+64 bites Windows Windows 10 MINIMUM:
+64 bites processzor és operációs rendszer szükséges
+Op. rendszer: Windows 10 (64-bites)
+Processzor: Intel Core i5-2300 or AMD FX-6300
+Memória: 8 GB RAM
+Grafika: NVIDIA GeForce GTX 650 Ti, 2 GB or AMD Radeon HD 7790, 2 GB
+DirectX: Verzió: 12
+AJÁNLOTT:
+64 bites processzor és operációs rendszer szükséges
+Op. rendszer: Windows 10 (64-bites)
+Processzor: Intel Core i7-4790k or AMD Ryzen 5 2600
+Memória: 8 GB RAM
+Grafika: NVIDIA GeForce GTX 1070, 8 GB or AMD Radeon RX Vega 56, 8 GB
+DirectX: Verzió: 12
