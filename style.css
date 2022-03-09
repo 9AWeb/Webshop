@@ -2242,9 +2242,7 @@ form textarea {
   margin-top: -40px;
   margin-bottom: 30px;
   background: #2b2b2b;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  margin-right: -100%
 }
 .home-slider .slides {
   *zoom: 1;
@@ -2261,7 +2259,7 @@ form textarea {
   padding-top: 100px;
   padding-bottom: 50px;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
 }
 .home-slider .flex-control-nav {
   position: absolute;
