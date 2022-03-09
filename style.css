@@ -2281,7 +2281,7 @@ form textarea {
   height: 10px;
   display: block;
   border-radius: 50%;
-  background-color: #ffffff
+  background-color: white;
   cursor: pointer;
   overflow: hidden;
   text-indent: -9999px;
