@@ -2261,7 +2261,7 @@ form textarea {
   padding-top: 100px;
   padding-bottom: 50px;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 .home-slider .flex-control-nav {
   position: absolute;
@@ -2291,7 +2291,7 @@ form textarea {
 }
 .home-slider .slide-content {
   float: left;
-  width: 100%;
+  width: 40%;
 }
 @media screen and (max-width: 768px) {
   .home-slider .slide-content {
