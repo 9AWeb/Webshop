@@ -2291,7 +2291,7 @@ form textarea {
 }
 .home-slider .slide-content {
   float: left;
-  width: 40%;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .home-slider .slide-content {
@@ -2331,7 +2331,7 @@ form textarea {
 }
 @media screen and (max-width: 768px) {
   .home-slider .slide-image {
-    width: 100%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 480px) {
