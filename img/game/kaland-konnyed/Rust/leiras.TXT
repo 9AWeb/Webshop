@@ -1,0 +1,27 @@
+15075 ft
+
+A Rusztban az egyetlen cél a túlélés. Minden azt akarja, hogy meghalj - a sziget élővilága és más lakói, a környezet, a többi túlélő. Tégy meg mindent, hogy még egy éjszakát kibírj.
+
+A Rust immár nyolcadik éve létezik, és már több mint 300 tartalmi frissítésen van túl, havonta egy garantált tartalmi javítással. A rendszeres egyensúlyjavításoktól és javításoktól kezdve az AI és grafikai frissítéseken át az olyan tartalmak hozzáadásáig, mint az új térképek, hangszerek, vonatok és drónok, valamint a rendszeres évszakok és események, mindig történik valami érdekes vagy veszélyes (vagy mindkettő) a szigeten. A játékhoz készült frissítések a következők:
+
+Procedurálisan generált világok térképszerkesztő támogatással.
+Saját szerverek üzemeltetése és szerveroldali modding támogatással
+Járművek: lovak, moduláris autók, hőlégballonok, helikopterek, vonatok és még sok minden más.
+Komplex elektromos rendszerek
+Mezőgazdaság
+Új ellenségek, vadvilág és frakciók
+Új műemlékek és felfedezésre váró területek
+Gesztusok és kapcsolatrendszer
+Zenei hangszerek
+Nagy vonathálózat
+Hatalmas friss grafikai felújítás
+..és még sok más
+EXPLORE
+
+Egy titokzatos szigeten ébredsz meztelenül, csupán egy kővel és egy zseblámpával felfegyverkezve. Szembe kell szállnod a természeti veszélyekkel (a hőségtől és a hidegtől kezdve a szomjúságon át az éhezésig), menedéket kell építened, enned (vagy megenni), anyagokat kell gyűjtened. Fedezd fel a szigetet, elhagyott településeit, titokzatos műemlékeit és az azokat elfoglaló frakciókat. De mindenekelőtt vigyázz a többi túlélőre...
+ÉPÍTÉS
+
+Tervezz és építs bázisokat, hogy megvédd a területedet vagy irányítsd a sziget erőforrásait. Kutass a technológiai fán, termessz farmokat, irányítsd az áramot, vezényelj járműveket a lovaktól az autókon át a hajókig és a helikopterekig. Bármit, ami a továbbjutáshoz szükséges.
+SURVIVE
+
+A Rustban nincsenek szabályok, csak azok, amelyeket te magad állítasz fel. Készíts szerszámokat, páncélokat és fegyvereket, hogy megvédd magad. Működj együtt barátaiddal és szövetségeseiddel, és építsetek közösen várost. Fedezd fel a szigetet és a benne zajló eseményeket. Kereskedj más játékosokkal. Vagy zsákmányold ki őket, rabolj a bázisaikra, és vedd el a nehezen megszerzett javaikat.
