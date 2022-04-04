@@ -285,9 +285,9 @@
 				<div class="col-md-6">
 					<h2 class="section-title">Belépés</h2>
 					<form action="#">
-						<input type="text" placeholder="Felhasználónév">
-						<input type="password" placeholder="Jelszó">
-						<input type="submit" value="Belépés">
+						<input type="text" id="loginfelhnev" placeholder="Felhasználónév">
+						<input type="password" id="loginpw" placeholder="Jelszó">
+						<button type="submit" onclick="login(loginfelhnev.value, loginpw.value)" value="Belépés">Belépés</button>
 					</form>
 				</div>
 				<div class="col-md-6">
@@ -297,7 +297,7 @@
 						<input type="email" id="emal" placeholder="Email cím">
 						<input type="password" id="jelsz1" placeholder="Jelszó">
 						<input type="password" id="jelsz2" placeholder="Jelszó mégegyszer">
-						<button type="submit" onclick="reg(felhnev.value,emal.value,jelsz1.value,jelsz2.value)" value="Regisztráció"></button>
+						<button type="submit" onclick="reg(felhnev.value,emal.value,jelsz1.value,jelsz2.value)" value="Regisztráció">Regisztráció</button>
 					</form>
 				</div>
 			</div>

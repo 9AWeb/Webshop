@@ -390,7 +390,6 @@ form textarea {
   padding: 30px;
   -webkit-transition: .3s ease;
           transition: .3s ease;
-  -webkit-transform: translateY(!px);
       -ms-transform: translateY(-100px);
           transform: translateY(-100px);
 }
@@ -2243,6 +2242,7 @@ form textarea {
   margin-bottom: 30px;
   background: #2b2b2b;
   margin-right: auto;
+  float: left;
 }
 .home-slider .slides {
   *zoom: 1;
