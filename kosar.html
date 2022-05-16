@@ -65,94 +65,51 @@
 			<main class="main-content">
 				<div class="container">
 					<div class="page">
-						
-						<table class="cart">
-							<thead>
-								<tr>
-									<th class="product-name">Név</th>
-									<th class="product-price">Ár</th>
-									<th class="product-qty">Mennyiség</th>
-									<th class="product-total">Összesen</th>
-									<th class="action"></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="product-name">
-										<div class="product-thumbnail">
-											<img src="dummy/cart-thumb-1.jpg" alt="">
-										</div>
-										<div class="product-detail">
-											<h3 class="product-title">placeholder</h3>
-											<p>placeholder</p>
-										</div>
-									</td>
-									<td class="product-price">placeholder</td>
-									<td class="product-qty">
-										<select name="#">
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-										</select>
-									</td>
-									<td class="product-total">placeholder</td>
-									<td class="action"><a href="#"><i class="fa fa-times"></i></a></td>
-								</tr>
-								<tr>
-									<td class="product-name">
-										<div class="product-thumbnail">
-											<img src="dummy/cart-thumb-2.jpg" alt="">
-										</div>
-										<div class="product-detail">
-											<h3 class="product-title">placeholder</h3>
-											<p>placeholder</p>
-										</div>
-									</td>
-									<td class="product-price">placeholder</td>
-									<td class="product-qty">
-										<select name="#">
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-										</select>
-									</td>
-									<td class="product-total">placeholder</td>
-									<td class="action"><a href="#"><i class="fa fa-times"></i></a></td>
-								</tr>
-								<tr>
-									<td class="product-name">
-										<div class="product-thumbnail">
-											<img src="dummy/cart-thumb-3.jpg" alt="">
-										</div>
-										<div class="product-detail">
-											<h3 class="product-title">placeholder</h3>
-											<p>placeholder</p>
-										</div>
-									</td>
-									<td class="product-price">placeholder</td>
-									<td class="product-qty">
-										<select name="#">
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-										</select>
-									</td>
-									<td class="product-total">placeholder</td>
-									<td class="action"><a href="#"><i class="fa fa-times"></i></a></td>
-								</tr>
-							</tbody>
-						</table>
+					
+					 <div class="container flex">
+  <div class="structure">
+    <h1>Shopping cart</h1>
 
-						<div class="cart-total">
-							<p><strong>Részvégösszegszar:</strong>placeholder</p>
-							<p><strong>Szállításfos::</strong>placeholder</p>
-							<p class="total"><strong>Összesen</strong><span class="num">placeholder</span></p>
-							<p>
-								<a href="#" class="button muted">Vásárlás folytatása</a>
-								<a href="#" class="button">Fizetés</a>
-							</p>
-						</div>
-						
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Product name</th>
+          <th>Unit price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="all_products">
+        <tr>
+          <td>This is a product name</td>
+          <td>1.80</td>
+          <td class="quantity"><input type="number" placeholder="Unit price" min="0" value="2" contenteditable></td>
+          <td>3.60</td>
+          <td class="remove"><button type="button">Remove</button></td>
+        </tr>
+        <tr>
+          <td>Postcard</td>
+          <td>2.99</td>
+          <td class="quantity"><input type="number" placeholder="Unit price" min="0" value="1" contenteditable></td>
+          <td>2.99</td>
+          <td class="remove"><button type="button">Remove</button></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td><input type="text" id="name_product" placeholder="Name of the product" contenteditable></td>
+          <td><input  type="number" step="0.01" id="price_product" value="0.50" contenteditable></td>
+          <td></td>
+          <td></td>
+          <td><button type="button" id="add_button">Add product</button></td>
+        </tr>
+      </tfoot>
+    </table>
+    <h2>Total : <span id="total_display">0 euros</span></h2>
+  </div>
+</div>
+					
 					</div>
 				</div>
 			</main>
