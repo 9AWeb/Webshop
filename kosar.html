@@ -182,6 +182,11 @@
 		<script src="js/app.js"></script>
 		
 		<script>
+			
+		var arak = {
+		"jatek": 1000
+		}
+			
 			document.getElementById("add_button").addEventListener("click", checkInput);
 document.querySelectorAll(".remove").forEach(removebtn => removebtn.addEventListener("click", removeProduct));
 document.querySelectorAll(".quantity").forEach(qty => qty.addEventListener("change", changeSubtotal));
@@ -200,7 +205,11 @@ function checkInput(){
 // Add a product
 function addProduct(){
 	let nameProduct = document.getElementById("name_product");
-	let priceProduct = document.getElementById("price_product");
+	let temp = document.getElementById("name_product").value;
+	let priceProduct = arak.temp
+	
+	alert(priceProduct)
+	console.log(priceProduct)
 
 	let tbody = document.getElementById("all_products");
 	let tr = tbody.insertRow();
