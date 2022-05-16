@@ -183,9 +183,7 @@
 		
 		<script>
 			
-		var arak = {
-		"jatek": 1000
-		}
+		var jatek1 = 1000
 			
 			document.getElementById("add_button").addEventListener("click", checkInput);
 document.querySelectorAll(".remove").forEach(removebtn => removebtn.addEventListener("click", removeProduct));
@@ -195,8 +193,7 @@ total();
 // Check if input is empty
 function checkInput(){
 	let nameProduct = document.getElementById("name_product");
-	let priceProduct = document.getElementById("price_product");
-	if (nameProduct.value != "" && priceProduct.value != "") {
+	if (nameProduct.value != "") {
 		addProduct();
 		total();
 	}
@@ -206,7 +203,11 @@ function checkInput(){
 function addProduct(){
 	let nameProduct = document.getElementById("name_product");
 	let temp = document.getElementById("name_product").value;
-	let priceProduct = arak.temp
+	console.log(temp)
+	let priceProduct = 0
+	if (temp === "jatek1") {
+		let priceProduct = jatek1
+	}
 	
 	alert(priceProduct)
 	console.log(priceProduct)
@@ -220,16 +221,15 @@ function addProduct(){
 	let td5 = tr.insertCell(4);
 
 	td1.innerHTML = nameProduct.value;
-	td2.innerHTML = priceProduct.value;
+	td2.innerHTML = priceProduct;
 	td3.innerHTML = '<input type="number" class="quantity" value="1" min="0">';
-	td4.innerHTML = priceProduct.value;
+	td4.innerHTML = priceProduct;
 	td5.innerHTML = '<button type="button" class="remove">Remove</i></button>';
 
 	td3.addEventListener("change", changeSubtotal);
 	td5.addEventListener("click", removeProduct);
 
 	nameProduct.value = "";
-	priceProduct.value = "";
 }
 
 // Change subtotal
