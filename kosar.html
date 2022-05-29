@@ -65,94 +65,51 @@
 			<main class="main-content">
 				<div class="container">
 					<div class="page">
-						
-						<table class="cart">
-							<thead>
-								<tr>
-									<th class="product-name">Név</th>
-									<th class="product-price">Ár</th>
-									<th class="product-qty">Mennyiség</th>
-									<th class="product-total">Összesen</th>
-									<th class="action"></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="product-name">
-										<div class="product-thumbnail">
-											<img src="dummy/cart-thumb-1.jpg" alt="">
-										</div>
-										<div class="product-detail">
-											<h3 class="product-title">placeholder</h3>
-											<p>placeholder</p>
-										</div>
-									</td>
-									<td class="product-price">placeholder</td>
-									<td class="product-qty">
-										<select name="#">
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-										</select>
-									</td>
-									<td class="product-total">placeholder</td>
-									<td class="action"><a href="#"><i class="fa fa-times"></i></a></td>
-								</tr>
-								<tr>
-									<td class="product-name">
-										<div class="product-thumbnail">
-											<img src="dummy/cart-thumb-2.jpg" alt="">
-										</div>
-										<div class="product-detail">
-											<h3 class="product-title">placeholder</h3>
-											<p>placeholder</p>
-										</div>
-									</td>
-									<td class="product-price">placeholder</td>
-									<td class="product-qty">
-										<select name="#">
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-										</select>
-									</td>
-									<td class="product-total">placeholder</td>
-									<td class="action"><a href="#"><i class="fa fa-times"></i></a></td>
-								</tr>
-								<tr>
-									<td class="product-name">
-										<div class="product-thumbnail">
-											<img src="dummy/cart-thumb-3.jpg" alt="">
-										</div>
-										<div class="product-detail">
-											<h3 class="product-title">placeholder</h3>
-											<p>placeholder</p>
-										</div>
-									</td>
-									<td class="product-price">placeholder</td>
-									<td class="product-qty">
-										<select name="#">
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-										</select>
-									</td>
-									<td class="product-total">placeholder</td>
-									<td class="action"><a href="#"><i class="fa fa-times"></i></a></td>
-								</tr>
-							</tbody>
-						</table>
+					
+					 <div class="container flex">
+  <div class="structure">
+    <h1>Shopping cart</h1>
 
-						<div class="cart-total">
-							<p><strong>Részvégösszegszar:</strong>placeholder</p>
-							<p><strong>Szállításfos::</strong>placeholder</p>
-							<p class="total"><strong>Összesen</strong><span class="num">placeholder</span></p>
-							<p>
-								<a href="#" class="button muted">Vásárlás folytatása</a>
-								<a href="#" class="button">Fizetés</a>
-							</p>
-						</div>
-						
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Product name</th>
+          <th>Unit price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="all_products">
+        <tr>
+          <td>This is a product name</td>
+          <td>1.80</td>
+          <td class="quantity"><input type="number" placeholder="Unit price" min="0" value="2" contenteditable></td>
+          <td>3.60</td>
+          <td class="remove"><button type="button">Remove</button></td>
+        </tr>
+        <tr>
+          <td>Postcard</td>
+          <td>2.99</td>
+          <td class="quantity"><input type="number" placeholder="Unit price" min="0" value="1" contenteditable></td>
+          <td>2.99</td>
+          <td class="remove"><button type="button">Remove</button></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td><input type="text" id="name_product" placeholder="Name of the product" contenteditable></td>
+          <td><input  type="number" step="0.01" id="price_product" value="0.50" contenteditable></td>
+          <td></td>
+          <td></td>
+          <td><button type="button" id="add_button">Add product</button></td>
+        </tr>
+      </tfoot>
+    </table>
+    <h2>Total : <span id="total_display">0 euros</span></h2>
+  </div>
+</div>
+					
 					</div>
 				</div>
 			</main>
@@ -223,6 +180,86 @@
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
+		
+		<script>
+			
+		var jatek1 = 1000
+			
+			document.getElementById("add_button").addEventListener("click", checkInput);
+document.querySelectorAll(".remove").forEach(removebtn => removebtn.addEventListener("click", removeProduct));
+document.querySelectorAll(".quantity").forEach(qty => qty.addEventListener("change", changeSubtotal));
+total();
+
+// Check if input is empty
+function checkInput(){
+	let nameProduct = document.getElementById("name_product");
+	if (nameProduct.value != "") {
+		addProduct();
+		total();
+	}
+}
+
+// Add a product
+function addProduct(){
+	let nameProduct = document.getElementById("name_product");
+	let temp = document.getElementById("name_product").value;
+	console.log(temp)
+	let priceProduct = 0
+	if (temp === "jatek1") {
+		let priceProduct = jatek1
+	}
+	
+	alert(priceProduct)
+	console.log(priceProduct)
+
+	let tbody = document.getElementById("all_products");
+	let tr = tbody.insertRow();
+	let td1 = tr.insertCell(0);
+	let td2 = tr.insertCell(1);
+	let td3 = tr.insertCell(2);
+	let td4 = tr.insertCell(3);
+	let td5 = tr.insertCell(4);
+
+	td1.innerHTML = nameProduct.value;
+	td2.innerHTML = priceProduct;
+	td3.innerHTML = '<input type="number" class="quantity" value="1" min="0">';
+	td4.innerHTML = priceProduct;
+	td5.innerHTML = '<button type="button" class="remove">Remove</i></button>';
+
+	td3.addEventListener("change", changeSubtotal);
+	td5.addEventListener("click", removeProduct);
+
+	nameProduct.value = "";
+}
+
+// Change subtotal
+function changeSubtotal(element) {
+	let price = this.previousElementSibling.innerHTML;
+	let quantity = element.target.value; 
+	let subtotal = parseFloat(price * quantity).toFixed(2);
+	this.nextElementSibling.innerHTML = subtotal;
+	total();
+}
+
+// Remove a product
+function removeProduct() {
+	this.parentElement.parentElement.removeChild(this.parentElement);
+	total();
+}
+
+// Sum total
+function total(){
+	let totalDisplay = document.getElementById("total_display");
+	let sum = 0;
+	let tbody = document.getElementById("all_products");
+	for (let i = 0; i < tbody.rows.length; i++) {
+		sum = sum + parseFloat(tbody.rows[i].cells[3].innerHTML);
+	}
+	let total = sum.toFixed(2);
+	totalDisplay.innerHTML = total + " euros";
+}
+
+		</script>
 		
 	</body>
 
