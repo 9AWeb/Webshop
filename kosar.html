@@ -73,40 +73,40 @@
     <table id="table">
       <thead>
         <tr>
-          <th>Product name</th>
-          <th>Unit price</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-          <th>Action</th>
+          <th>Termék neve</th>
+          <th>Darab ár</th>
+          <th>Mennyiség</th>
+          <th>Fél-végösszeg</th>
+          <th>Akció</th>
         </tr>
       </thead>
       <tbody id="all_products">
         <tr>
-          <td>This is a product name</td>
-          <td>1.80</td>
-          <td class="quantity"><input type="number" placeholder="Unit price" min="0" value="2" contenteditable></td>
-          <td>3.60</td>
-          <td class="remove"><button type="button">Remove</button></td>
+          <td>Elden Ring</td>
+          <td>20.000</td>
+          <td class="quantity"><input type="number" placeholder="Ár" min="0" value="2" contenteditable></td>
+          <td>40.000</td>
+          <td class="remove"><button type="button">Törlés</button></td>
         </tr>
         <tr>
-          <td>Postcard</td>
-          <td>2.99</td>
-          <td class="quantity"><input type="number" placeholder="Unit price" min="0" value="1" contenteditable></td>
-          <td>2.99</td>
-          <td class="remove"><button type="button">Remove</button></td>
+          <td>Grand Theft Auto V</td>
+          <td>10.500</td>
+          <td class="quantity"><input type="number" placeholder="Ár" min="0" value="20" contenteditable></td>
+          <td>210.000</td>
+          <td class="remove"><button type="button">Törlés</button></td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
-          <td><input type="text" id="name_product" placeholder="Name of the product" contenteditable></td>
-          <td><input  type="number" step="0.01" id="price_product" value="0.50" contenteditable></td>
+          <td><input type="text" id="name_product" placeholder="Termék neve" contenteditable></td>
+          <td><input  type="number" step="10" id="price_product" value="100" contenteditable></td>
           <td></td>
           <td></td>
-          <td><button type="button" id="add_button">Add product</button></td>
+          <td><button type="button" id="add_button">Termék hozzáadása</button></td>
         </tr>
       </tfoot>
     </table>
-    <h2>Total : <span id="total_display">0 euros</span></h2>
+    <h2>Total : <span id="total_display">0 Forint</span></h2>
   </div>
 </div>
 					
@@ -202,15 +202,7 @@ function checkInput(){
 // Add a product
 function addProduct(){
 	let nameProduct = document.getElementById("name_product");
-	let temp = document.getElementById("name_product").value;
-	console.log(temp)
-	let priceProduct = 0
-	if (temp === "jatek1") {
-		let priceProduct = jatek1
-	}
-	
-	alert(priceProduct)
-	console.log(priceProduct)
+	let priceProduct = document.getElementById("price_product");
 
 	let tbody = document.getElementById("all_products");
 	let tr = tbody.insertRow();
@@ -221,10 +213,10 @@ function addProduct(){
 	let td5 = tr.insertCell(4);
 
 	td1.innerHTML = nameProduct.value;
-	td2.innerHTML = priceProduct;
+	td2.innerHTML = priceProduct.value;
 	td3.innerHTML = '<input type="number" class="quantity" value="1" min="0">';
-	td4.innerHTML = priceProduct;
-	td5.innerHTML = '<button type="button" class="remove">Remove</i></button>';
+	td4.innerHTML = priceProduct.value;
+	td5.innerHTML = '<button type="button" class="remove">Törlés</i></button>';
 
 	td3.addEventListener("change", changeSubtotal);
 	td5.addEventListener("click", removeProduct);
@@ -256,7 +248,7 @@ function total(){
 		sum = sum + parseFloat(tbody.rows[i].cells[3].innerHTML);
 	}
 	let total = sum.toFixed(2);
-	totalDisplay.innerHTML = total + " euros";
+	totalDisplay.innerHTML = total + " Forint";
 }
 
 		</script>
